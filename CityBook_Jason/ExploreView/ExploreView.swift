@@ -16,13 +16,12 @@ struct ExploreView: View {
     @State private var poiId: POI.ID? = 0
     @State private var streetId: Int = 0
     var externalStreet: Binding<Street?>?
-    
     let coordinate = CLLocationCoordinate2D(latitude: 31.21017, longitude: 121.43575)
     @State private var childState: Bool = false
     
     var body: some View {
         ZStack(alignment: .bottom) {
-            //Map bg view
+            // Map bg view
             MapView(coordinate: coordinate)
             if content == 0 {
                 ScrollView(Axis.Set.horizontal) {
@@ -58,9 +57,7 @@ struct ExploreView: View {
                 .scrollIndicators(.never)
                 .padding([.horizontal, .bottom], 20)
             }
-            
         }
-        
     }
 }
 

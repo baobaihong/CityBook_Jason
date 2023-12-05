@@ -172,12 +172,12 @@
 			children = (
 				96C72FD12B1E1B8B00A17477 /* CityBook_JasonApp.swift */,
 				96C72FD32B1E1B8B00A17477 /* ContentView.swift */,
+				96C72FD52B1E1B8B00A17477 /* Item.swift */,
 				963527FC2B1EBE5900639D6C /* ExploreView */,
 				963527F42B1EBE5900639D6C /* CollectionView */,
 				963528092B1EBE5900639D6C /* StreetDetailView */,
 				963528152B1EBE5900639D6C /* Helpers */,
 				963527F82B1EBE5900639D6C /* Model */,
-				96C72FD52B1E1B8B00A17477 /* Item.swift */,
 				96C72FD72B1E1B8C00A17477 /* Assets.xcassets */,
 				96C72FDC2B1E1B8C00A17477 /* CityBook_Jason.entitlements */,
 				96C72FDD2B1E1B8C00A17477 /* Info.plist */,
