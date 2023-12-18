@@ -26,6 +26,7 @@
 		963528342B1EBE5900639D6C /* ShareButton.swift in Sources */ = {isa = PBXBuildFile; fileRef = 963528182B1EBE5900639D6C /* ShareButton.swift */; };
 		963528352B1EBE5900639D6C /* HorizontalFlip.swift in Sources */ = {isa = PBXBuildFile; fileRef = 963528192B1EBE5900639D6C /* HorizontalFlip.swift */; };
 		963528362B1EBE5900639D6C /* FavouriteButton.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9635281A2B1EBE5900639D6C /* FavouriteButton.swift */; };
+		96A4F8A62B329584001EF5B0 /* DetailView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 96A4F8A52B329584001EF5B0 /* DetailView.swift */; };
 		96C72FD22B1E1B8B00A17477 /* CityBook_JasonApp.swift in Sources */ = {isa = PBXBuildFile; fileRef = 96C72FD12B1E1B8B00A17477 /* CityBook_JasonApp.swift */; };
 		96C72FD42B1E1B8B00A17477 /* ContentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 96C72FD32B1E1B8B00A17477 /* ContentView.swift */; };
 		96C72FD62B1E1B8B00A17477 /* Item.swift in Sources */ = {isa = PBXBuildFile; fileRef = 96C72FD52B1E1B8B00A17477 /* Item.swift */; };
@@ -52,6 +53,7 @@
 		963528182B1EBE5900639D6C /* ShareButton.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ShareButton.swift; sourceTree = "<group>"; };
 		963528192B1EBE5900639D6C /* HorizontalFlip.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = HorizontalFlip.swift; sourceTree = "<group>"; };
 		9635281A2B1EBE5900639D6C /* FavouriteButton.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = FavouriteButton.swift; sourceTree = "<group>"; };
+		96A4F8A52B329584001EF5B0 /* DetailView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = DetailView.swift; sourceTree = "<group>"; };
 		96C72FCE2B1E1B8B00A17477 /* CityBook_Jason.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = CityBook_Jason.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		96C72FD12B1E1B8B00A17477 /* CityBook_JasonApp.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CityBook_JasonApp.swift; sourceTree = "<group>"; };
 		96C72FD32B1E1B8B00A17477 /* ContentView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ContentView.swift; sourceTree = "<group>"; };
@@ -76,6 +78,7 @@
 		963527F42B1EBE5900639D6C /* CollectionView */ = {
 			isa = PBXGroup;
 			children = (
+				96A4F8A52B329584001EF5B0 /* DetailView.swift */,
 				963527F52B1EBE5900639D6C /* StreetList.swift */,
 				963527F62B1EBE5900639D6C /* CollectionView.swift */,
 				963527F72B1EBE5900639D6C /* StreetBoard.swift */,
@@ -280,6 +283,7 @@
 				9635282C2B1EBE5900639D6C /* BackPOICard.swift in Sources */,
 				9635282D2B1EBE5900639D6C /* StreetViewButton.swift in Sources */,
 				963528332B1EBE5900639D6C /* MapView.swift in Sources */,
+				96A4F8A62B329584001EF5B0 /* DetailView.swift in Sources */,
 				9635281F2B1EBE5900639D6C /* POI.swift in Sources */,
 				9635281B2B1EBE5900639D6C /* StreetList.swift in Sources */,
 				963528342B1EBE5900639D6C /* ShareButton.swift in Sources */,
