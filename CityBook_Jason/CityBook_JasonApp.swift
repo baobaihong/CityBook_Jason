@@ -25,8 +25,14 @@ struct CityBook_JasonApp: App {
 
     var body: some Scene {
         WindowGroup {
-            ContentView()
+            TabView {
+                ExploreView()
+                    .tabItem { Label("探索", systemImage: "globe.europe.africa.fill") }
+                CollectionView()
+                    .tabItem { Label("游线", systemImage: "rectangle.stack") }
+            }
         }
         .modelContainer(sharedModelContainer)
+        .environmentObject(ModelData())
     }
 }

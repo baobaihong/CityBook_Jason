@@ -14,6 +14,7 @@ struct CollectionView: View {
     let buttonImage = ["books.vertical.fill", "cart.fill", "star.fill"]
     
     var body: some View {
+        NavigationStack{
             VStack {
                 HStack {
                     ForEach(0 ..< 3) { index in
@@ -38,6 +39,7 @@ struct CollectionView: View {
                     StreetBoard()
                 }
             }
+        }
     }
     
 }
