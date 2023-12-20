@@ -66,7 +66,6 @@ struct ExploreView: View {
                     .background(.black)
                     .foregroundStyle(.white)
                     .clipShape(Capsule())
-                    
                 }
             }
         }
