@@ -30,6 +30,8 @@ struct CityBook_JasonApp: App {
                     .tabItem { Label("探索", systemImage: "globe.europe.africa.fill") }
                 CollectionView()
                     .tabItem { Label("游线", systemImage: "rectangle.stack") }
+                ProfileView()
+                    .tabItem { Label("个人", systemImage: "person") }
             }
         }
         .modelContainer(sharedModelContainer)
