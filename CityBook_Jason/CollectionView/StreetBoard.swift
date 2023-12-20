@@ -35,11 +35,12 @@ struct StreetBoard: View {
                     if let streets = modelData.distribution[district] {
                         LazyVGrid(columns: columns, spacing: 20) {
                             ForEach(streets) { street in
-                                StreetBook(street: street)
-                                    .onTapGesture(perform: { detailStreet = street })
-                                    .fullScreenCover(item: $detailStreet) {_ in
-                                        ExploreView(externalStreet: $detailStreet)
-                                    }
+                                NavigationLink (destination: DetailView(street: $detailStreet)) {
+                                    StreetBook(street: street)
+                                }
+                                .simultaneousGesture(TapGesture().onEnded {
+                                    detailStreet = street
+                                })
                             }
                         }
                     }

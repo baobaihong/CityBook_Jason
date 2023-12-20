@@ -10,9 +10,10 @@ import SwiftUI
 struct StreetDetailView: View {
     @EnvironmentObject var modelData: ModelData
     @Environment(\.dismiss) private var dismiss
-    @Binding var showPOIDetail: Int
+    @Binding var showPOIDetail: Int?
     @Binding var poiId: POI.ID?
-    @Binding var streetId: Int
+    @Binding var streetId: Int?
+    var buttonShow: Bool = true
     var street: Street
     
     var streetIndex: Int {
@@ -29,7 +30,7 @@ struct StreetDetailView: View {
                     .overlay(alignment: .topTrailing) {
                         Button { dismiss() } label: {
                             Image(systemName: "xmark.circle.fill")
-                            .padding().font(.title).foregroundStyle(.white.opacity(0.5))}}
+                            .padding().font(.title).foregroundStyle(.white.opacity(buttonShow ? 0.5 : 0))}}
                 // Title & Button
                 VStack(spacing: 20) {
                     HStack {
@@ -77,12 +78,12 @@ struct StreetDetailView: View {
                     .background(.white)
                     .clipShape(RoundedRectangle(cornerRadius: 2))
                     .padding(.vertical, 10)
-                    .onTapGesture {
-                        dismiss()
+                    .simultaneousGesture(TapGesture().onEnded({ _ in
                         showPOIDetail = 1
-                        poiId = 1
+                        poiId = poi.id
                         streetId = street.id
-                    }
+                        dismiss()
+                    }))
             }
             .padding(.horizontal, 35)
             .listRowInsets(EdgeInsets())
